@@ -1,8 +1,9 @@
-<nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg" data-bs-theme='dark'>
-  <div
-    class="container-fluid"
-    style="display: flex; justify-content: space-between; align-items: center"
-  >
+<nav
+  class="navbar navbar-expand-lg"
+  data-bs-theme="dark"
+  style="background-image: linear-gradient(to right, #2f4159, #a7c1d9)"
+>
+  <div class="container-fluid" style="font-size: medium">
     <a #menu class="navbar-brand active" routerLink="/" (click)="removeClass()">
       <!-- <mat-icon
         aria-hidden="false"
@@ -10,6 +11,7 @@
         fontIcon="home"
       ></mat-icon> -->
       <mat-icon>flight</mat-icon>
+      <!-- RK TRAVELS -->
     </a>
     <button
       class="navbar-toggler"
@@ -24,40 +26,86 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-center">
+          <a
+            #services
+            class="nav-link"
+            routerLink="/services"
+            (click)="checkClass('service')"
+            >Services</a
+          >
+        </li>
+        <li class="nav-item text-center">
+          <a
+            #about
+            class="nav-link"
+            routerLink="/about"
+            (click)="checkClass('about')"
+            >About</a
+          >
+        </li>
+        <li class="nav-item text-center">
+          <a
+            #contact
+            class="nav-link"
+            routerLink="/contact"
+            (click)="checkClass('contact')"
+            >Contact</a
+          >
+        </li>
         <!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li> -->
-        <li class="nav-item">
-          <a #services class="nav-link" routerLink="/services" (click)="checkClass('service')">Services</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="mx-1 mb-1 text-center">
+          <button mat-raised-button color="primary">Sign In</button>
+          <!-- <button mat-stroked-button color="primary">Basic</button> -->
+          <!-- <button
+              type="button"
+              class="btn bg-transparent border text-white rounded-pill"
+            >
+              Sign In
+            </button> -->
+          <!-- <div class="example-button-container">
+              <button
+                mat-fab
+                color="primary"
+                aria-label="Example icon button with a delete icon"
+              >
+                Sign In
+              </button>
+            </div> -->
         </li>
-        <li class="nav-item">
-          <a #about class="nav-link" routerLink="/about" (click)="checkClass('about')">About</a>
-        </li>
-        <li class="nav-item">
-          <a #contact class="nav-link" routerLink="/contact" (click)="checkClass('contact')">Contact</a>
+        <li class="text-center">
+          <button mat-raised-button color="primary">Get Started</button>
+          <!-- <button type="button" class="btn btn-primary rounded-pill">
+              Get Started
+            </button> -->
         </li>
         <!-- <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
         <!-- <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li> -->
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
       </ul>
-      <!-- <form class="d-flex" role="search">
+    </div>
+    <!-- <form class="d-flex" role="search">
         <input
           class="form-control me-2"
           type="search"
@@ -66,7 +114,7 @@
         />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
-    </div>
   </div>
 </nav>
 <router-outlet></router-outlet>
+<!-- <app-footer></app-footer> -->

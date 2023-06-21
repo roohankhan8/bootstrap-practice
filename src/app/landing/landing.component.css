@@ -1,12 +1,12 @@
 p {
   font-family: "Poppins";
   font-style: italic;
-  color: #2F4159;
-  text-decoration: underline;
+  /* color: #2F4159; */
+  /* text-decoration: underline; */
+  color: yellow;
 }
 .custom-bg {
   background-image: url("../../assets/pexels-dids-5461183.jpg");
-  /* Additional background properties and styling */
   background-size: cover;
   height: 100%;
 }

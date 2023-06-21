@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,7 +6,6 @@ import { Component, Renderer2, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent {
-  @ViewChild('menu') myMenu!: ElementRef;
   @ViewChild('services') myServices!: ElementRef;
   @ViewChild('contact') myContact!: ElementRef;
   @ViewChild('about') myAbout!: ElementRef;

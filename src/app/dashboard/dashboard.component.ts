@@ -13,18 +13,18 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Italy', background: "url('../../assets/pexels-leeloo-thefirst-5227440.jpg')", cols: 1, rows: 1 },
+          { title: 'Hawai', background: "url('../../assets/pexels-matheus-bertelli-7163689.jpg')", cols: 1, rows: 1 },
+          { title: 'Maldives', background: "url('../../assets/pexels-rachel-claire-4825701.jpg')", cols: 1, rows: 1 },
+          { title: 'Pakistan', background: "url('../../assets/pexels-suzukii-xingfu-872831.jpg')", cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Italy', background: "url('../../assets/pexels-leeloo-thefirst-5227440.jpg')", cols: 2, rows: 1 },
+        { title: 'Hawai', background: "url('../../assets/pexels-matheus-bertelli-7163689.jpg')", cols: 1, rows: 1 },
+        { title: 'Maldives', background: "url('../../assets/pexels-rachel-claire-4825701.jpg')", cols: 1, rows: 2 },
+        { title: 'Pakistan', background: "url('../../assets/pexels-suzukii-xingfu-872831.jpg')", cols: 1, rows: 1 }
       ];
     })
   );

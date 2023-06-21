@@ -4,9 +4,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
-export class ContactComponent {
+
+export class ContactComponent{
   
   addressForm = this.fb.group({
     company: null,

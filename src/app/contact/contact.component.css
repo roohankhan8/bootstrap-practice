@@ -4,7 +4,7 @@
 
 .shipping-card {
   min-width: 120px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 
 .mat-radio-button {
@@ -25,3 +25,16 @@
 .col:last-child {
   margin-right: 0;
 }
+*{
+  font-family: "Poppins";
+  /* font-style: italic; */
+  /* color: #2F4159; */
+  /* text-decoration: underline; */
+  /* color: yellow; */
+}
+.custom-bg {
+  background-image: url("../../assets/pexels-porapak-apichodilok-346885.jpg");
+  background-size: cover;
+  height: 100%;
+}
+

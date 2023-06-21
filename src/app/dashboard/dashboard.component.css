@@ -1,3 +1,7 @@
+.dashboard {
+  background-image: linear-gradient(to right, #142615, #1c592b);
+  font-family: 'Poppins', Times, serif;
+}
 .grid-container {
   padding: 20px;
 }

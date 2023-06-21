@@ -24,6 +24,8 @@ import { AboutComponent } from './about/about.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
+import { EmailComponent } from './email/email.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +33,11 @@ import { MatNativeDateModule } from '@angular/material/core';
     NavComponent,
     DashboardComponent,
     LandingComponent,
-    ContactComponent,
     ServicesComponent,
     AboutComponent,
+    ContactComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
+    EmailComponent
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
